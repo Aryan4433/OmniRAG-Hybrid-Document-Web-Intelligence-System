@@ -1,48 +1,39 @@
-# OmniRAG-Hybrid-Document-Web-Intelligence-System
-OmniRAG is an advanced Retrieval-Augmented Generation (RAG) application that intelligently combines document-based semantic search with real-time web retrieval.
+# 🧠 OmniRAG – Hybrid Document & Web Intelligence System
 
-The system first attempts to answer queries using context extracted from uploaded PDF documents. If the requested information is not found in the document context, it automatically falls back to live web search using DuckDuckGo and generates a response using LLM reasoning.
+OmniRAG is an advanced **Retrieval-Augmented Generation (RAG)** application that combines document-based semantic search with real-time web retrieval.  
 
-This architecture ensures:
+The system first attempts to answer queries using context extracted from uploaded PDF documents. If the answer is not found in the document, it automatically falls back to live web search using DuckDuckGo and generates a response using LLM reasoning.
 
-High accuracy from local knowledge sources
+This hybrid architecture ensures higher reliability, reduced hallucination, and dynamic knowledge augmentation.
 
-Reduced hallucination
+---
 
-Real-time knowledge augmentation when required
+## 🚀 Features
 
-Intelligent fallback logic
+### 📄 Document-Based Semantic Search
+- Upload and process PDF documents
+- Recursive text chunking with overlap
+- SentenceTransformer embeddings
+- Chroma vector database for similarity search
 
-🚀 Key Features
-📄 Document-Based Semantic Search
+### 🔎 Intelligent Web Fallback
+- Detects when answer is not present in document
+- Performs real-time DuckDuckGo search
+- Synthesizes web results using LLM reasoning
 
-Upload PDF documents
+### 🤖 LLM-Powered Generation
+- Groq LLaMA 3.1 8B Instant model
+- Context-constrained RAG prompting
+- Explicit hallucination control using `NOT_FOUND` logic
 
-Automatic text chunking with overlap
+### 💬 Interactive Chat Interface
+- Built with Streamlit
+- Persistent session state
+- Multi-turn conversational experience
 
-Vector embedding generation using SentenceTransformers
+---
 
-Chroma vector database for similarity retrieval
-
-🔎 Intelligent Web Fallback
-
-Automatic detection when answer is not found in document
-
-Real-time DuckDuckGo search integration
-
-LLM-powered synthesis of web results
-
-🤖 LLM-Powered Reasoning
-
-Groq LLaMA 3.1 8B model integration
-
-Context-constrained RAG prompting
-
-Explicit hallucination control using NOT_FOUND logic
-
-💬 Interactive Chat Interface
-
-Streamlit-based conversational UI
+## 🏗️ System Architecture
 
 
 🛠️ Tech Stack
